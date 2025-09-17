@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite thread-count="1" parallel="tests" name="MobileAutomation">
+  <listeners>
+    <listener class-name="com.automation.mobile.listener.TestNGListener"/>
+  </listeners>
+  <test thread-count="1" name="Device 1">
+    <classes>
+      <class name="com.automation.mobile.TestRunner"/>
+    </classes>
+  </test> <!-- Device 1 -->
+</suite> <!-- MobileAutomation -->

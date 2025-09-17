@@ -1,0 +1,558 @@
+[
+  {
+    "line": 1,
+    "elements": [
+      {
+        "start_timestamp": "2025-09-16T14:34:48.700Z",
+        "before": [
+          {
+            "result": {
+              "error_message": "org.openqa.selenium.SessionNotCreatedException: Unable to create a new remote session. Please check the server log for more details. Original error: An unknown server-side error occurred while processing the command. Original error: Unknown device or simulator UDID: \u00276A19771F-F680-49C2-9238-DD1A82F7CC71\u0027\nBuild info: version: \u00273.141.59\u0027, revision: \u0027e82be7d358\u0027, time: \u00272018-11-14T08:17:03\u0027\nSystem info: host: \u0027VinothPandian.local\u0027, ip: \u00272406:7400:51:c2ae:b967:736f:ffa8:4c04%en0\u0027, os.name: \u0027Mac OS X\u0027, os.arch: \u0027x86_64\u0027, os.version: \u002714.6.1\u0027, java.version: \u002711.0.27\u0027\nDriver info: driver.version: IOSDriver\nremote stacktrace: UnknownError: An unknown server-side error occurred while processing the command. Original error: Unknown device or simulator UDID: \u00276A19771F-F680-49C2-9238-DD1A82F7CC71\u0027\n    at getResponseForW3CError (/usr/local/lib/node_modules/appium/node_modules/appium-base-driver/lib/protocol/errors.js:804:9)\n    at asyncHandler (/usr/local/lib/node_modules/appium/node_modules/appium-base-driver/lib/protocol/protocol.js:380:37)\nBuild info: version: \u00273.141.59\u0027, revision: \u0027e82be7d358\u0027, time: \u00272018-11-14T08:17:03\u0027\nSystem info: host: \u0027VinothPandian.local\u0027, ip: \u00272406:7400:51:c2ae:b967:736f:ffa8:4c04%en0\u0027, os.name: \u0027Mac OS X\u0027, os.arch: \u0027x86_64\u0027, os.version: \u002714.6.1\u0027, java.version: \u002711.0.27\u0027\nDriver info: driver.version: IOSDriver\n\tat io.appium.java_client.remote.AppiumCommandExecutor$1.createSession(AppiumCommandExecutor.java:216)\n\tat io.appium.java_client.remote.AppiumCommandExecutor.createSession(AppiumCommandExecutor.java:225)\n\tat io.appium.java_client.remote.AppiumCommandExecutor.execute(AppiumCommandExecutor.java:247)\n\tat org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)\n\tat io.appium.java_client.DefaultGenericMobileDriver.execute(DefaultGenericMobileDriver.java:41)\n\tat io.appium.java_client.AppiumDriver.execute(AppiumDriver.java:1)\n\tat io.appium.java_client.ios.IOSDriver.execute(IOSDriver.java:1)\n\tat org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:213)\n\tat io.appium.java_client.AppiumDriver.startSession(AppiumDriver.java:338)\n\tat org.openqa.selenium.remote.RemoteWebDriver.\u003cinit\u003e(RemoteWebDriver.java:131)\n\tat io.appium.java_client.DefaultGenericMobileDriver.\u003cinit\u003e(DefaultGenericMobileDriver.java:37)\n\tat io.appium.java_client.AppiumDriver.\u003cinit\u003e(AppiumDriver.java:89)\n\tat io.appium.java_client.AppiumDriver.\u003cinit\u003e(AppiumDriver.java:99)\n\tat io.appium.java_client.ios.IOSDriver.\u003cinit\u003e(IOSDriver.java:90)\n\tat com.automation.mobile.appium.AppiumDriverManager.initializeDriver(AppiumDriverManager.java:36)\n\tat com.automation.steps.HookService.before(HookService.java:63)\nCaused by: java.lang.reflect.InvocationTargetException\n\tat java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)\n\tat java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)\n\tat java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)\n\tat java.base/java.lang.reflect.Method.invoke(Method.java:566)\n\tat io.appium.java_client.remote.AppiumCommandExecutor$1.createSession(AppiumCommandExecutor.java:193)\n\tat io.appium.java_client.remote.AppiumCommandExecutor.createSession(AppiumCommandExecutor.java:225)\n\tat io.appium.java_client.remote.AppiumCommandExecutor.execute(AppiumCommandExecutor.java:247)\n\tat org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)\n\tat io.appium.java_client.DefaultGenericMobileDriver.execute(DefaultGenericMobileDriver.java:41)\n\tat io.appium.java_client.AppiumDriver.execute(AppiumDriver.java:1)\n\tat io.appium.java_client.ios.IOSDriver.execute(IOSDriver.java:1)\n\tat org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:213)\n\tat io.appium.java_client.AppiumDriver.startSession(AppiumDriver.java:338)\n\tat org.openqa.selenium.remote.RemoteWebDriver.\u003cinit\u003e(RemoteWebDriver.java:131)\n\tat io.appium.java_client.DefaultGenericMobileDriver.\u003cinit\u003e(DefaultGenericMobileDriver.java:37)\n\tat io.appium.java_client.AppiumDriver.\u003cinit\u003e(AppiumDriver.java:89)\n\tat io.appium.java_client.AppiumDriver.\u003cinit\u003e(AppiumDriver.java:99)\n\tat io.appium.java_client.ios.IOSDriver.\u003cinit\u003e(IOSDriver.java:90)\n\tat com.automation.mobile.appium.AppiumDriverManager.initializeDriver(AppiumDriverManager.java:36)\n\tat com.automation.steps.HookService.before(HookService.java:63)\n\tat java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)\n\tat java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)\n\tat java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)\n\tat java.base/java.lang.reflect.Method.invoke(Method.java:566)\n\tat io.cucumber.java.Invoker.doInvoke(Invoker.java:66)\n\tat io.cucumber.java.Invoker.invoke(Invoker.java:24)\n\tat io.cucumber.java.AbstractGlueDefinition.invokeMethod(AbstractGlueDefinition.java:47)\n\tat io.cucumber.java.JavaHookDefinition.execute(JavaHookDefinition.java:59)\n\tat io.cucumber.core.runner.CoreHookDefinition.execute(CoreHookDefinition.java:46)\n\tat io.cucumber.core.runner.HookDefinitionMatch.runStep(HookDefinitionMatch.java:21)\n\tat io.cucumber.core.runner.ExecutionMode$1.execute(ExecutionMode.java:10)\n\tat io.cucumber.core.runner.TestStep.executeStep(TestStep.java:92)\n\tat io.cucumber.core.runner.TestStep.run(TestStep.java:64)\n\tat io.cucumber.core.runner.TestCase.run(TestCase.java:98)\n\tat io.cucumber.core.runner.Runner.runPickle(Runner.java:73)\n\tat io.cucumber.testng.TestNGCucumberRunner.lambda$runScenario$0(TestNGCucumberRunner.java:117)\n\tat io.cucumber.core.runtime.CucumberExecutionContext.runTestCase(CucumberExecutionContext.java:117)\n\tat io.cucumber.testng.TestNGCucumberRunner.runScenario(TestNGCucumberRunner.java:114)\n\tat com.automation.mobile.TestRunner.runScenario(TestRunner.java:37)\n\tat java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)\n\tat java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)\n\tat java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)\n\tat java.base/java.lang.reflect.Method.invoke(Method.java:566)\n\tat org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)\n\tat org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)\n\tat org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)\n\tat org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)\n\tat org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)\n\tat org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)\n\tat org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)\n\tat org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)\n\tat java.base/java.util.ArrayList.forEach(ArrayList.java:1541)\n\tat org.testng.TestRunner.privateRun(TestRunner.java:794)\n\tat org.testng.TestRunner.run(TestRunner.java:596)\n\tat org.testng.SuiteRunner.runTest(SuiteRunner.java:377)\n\tat org.testng.SuiteRunner.access$000(SuiteRunner.java:28)\n\tat org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:418)\n\tat org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:64)\n\tat java.base/java.util.concurrent.FutureTask.run$$$capture(FutureTask.java:264)\n\tat java.base/java.util.concurrent.FutureTask.run(FutureTask.java)\n\tat --- Async.Stack.Trace --- (captured by IntelliJ IDEA debugger)\n\tat java.base/java.util.concurrent.FutureTask.\u003cinit\u003e(FutureTask.java:132)\n\tat java.base/java.util.concurrent.AbstractExecutorService.newTaskFor(AbstractExecutorService.java:108)\n\tat java.base/java.util.concurrent.AbstractExecutorService.invokeAll(AbstractExecutorService.java:269)\n\tat org.testng.internal.thread.ThreadUtil.execute(ThreadUtil.java:70)\n\tat org.testng.SuiteRunner.runInParallelTestMode(SuiteRunner.java:397)\n\tat org.testng.SuiteRunner.privateRun(SuiteRunner.java:330)\n\tat org.testng.SuiteRunner.run(SuiteRunner.java:276)\n\tat org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)\n\tat org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)\n\tat org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)\n\tat org.testng.TestNG.runSuitesLocally(TestNG.java:1134)\n\tat org.testng.TestNG.runSuites(TestNG.java:1063)\n\tat org.testng.TestNG.run(TestNG.java:1031)\n\tat com.automation.mobile.TestNGGenerator.runTest(TestNGGenerator.java:31)\n\tat com.automation.mobile.MobileRunner.executeRunner(MobileRunner.java:31)\n\tat java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)\n\tat java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)\n\tat java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)\n\tat java.base/java.lang.reflect.Method.invoke(Method.java:566)\n\tat org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)\n\tat org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)\n\tat org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)\n\tat org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)\n\tat org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)\n\tat org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)\n\tat org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)\n\tat org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)\n\tat java.base/java.util.ArrayList.forEach(ArrayList.java:1541)\n\tat org.testng.TestRunner.privateRun(TestRunner.java:794)\n\tat org.testng.TestRunner.run(TestRunner.java:596)\n\tat org.testng.SuiteRunner.runTest(SuiteRunner.java:377)\n\tat org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)\n\tat org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)\n\tat org.testng.SuiteRunner.run(SuiteRunner.java:276)\n\tat org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)\n\tat org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)\n\tat org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)\n\tat org.testng.TestNG.runSuitesLocally(TestNG.java:1134)\n\tat org.testng.TestNG.runSuites(TestNG.java:1063)\n\tat org.testng.TestNG.run(TestNG.java:1031)\n\tat com.intellij.rt.testng.IDEARemoteTestNG.run(IDEARemoteTestNG.java:65)\n\tat com.intellij.rt.testng.RemoteTestNGStarter.main(RemoteTestNGStarter.java:105)\nCaused by: org.openqa.selenium.WebDriverException: An unknown server-side error occurred while processing the command. Original error: Unknown device or simulator UDID: \u00276A19771F-F680-49C2-9238-DD1A82F7CC71\u0027\nBuild info: version: \u00273.141.59\u0027, revision: \u0027e82be7d358\u0027, time: \u00272018-11-14T08:17:03\u0027\nSystem info: host: \u0027VinothPandian.local\u0027, ip: \u00272406:7400:51:c2ae:b967:736f:ffa8:4c04%en0\u0027, os.name: \u0027Mac OS X\u0027, os.arch: \u0027x86_64\u0027, os.version: \u002714.6.1\u0027, java.version: \u002711.0.27\u0027\nDriver info: driver.version: IOSDriver\nremote stacktrace: UnknownError: An unknown server-side error occurred while processing the command. Original error: Unknown device or simulator UDID: \u00276A19771F-F680-49C2-9238-DD1A82F7CC71\u0027\n    at getResponseForW3CError (/usr/local/lib/node_modules/appium/node_modules/appium-base-driver/lib/protocol/errors.js:804:9)\n    at asyncHandler (/usr/local/lib/node_modules/appium/node_modules/appium-base-driver/lib/protocol/protocol.js:380:37)\n\tat java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)\n\tat java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)\n\tat java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)\n\tat java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)\n\tat org.openqa.selenium.remote.W3CHandshakeResponse.lambda$errorHandler$0(W3CHandshakeResponse.java:62)\n\tat org.openqa.selenium.remote.HandshakeResponse.lambda$getResponseFunction$0(HandshakeResponse.java:30)\n\tat org.openqa.selenium.remote.ProtocolHandshake.lambda$createSession$0(ProtocolHandshake.java:126)\n\tat java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:195)\n\tat java.base/java.util.Spliterators$ArraySpliterator.tryAdvance(Spliterators.java:958)\n\tat java.base/java.util.stream.ReferencePipeline.forEachWithCancel(ReferencePipeline.java:127)\n\tat java.base/java.util.stream.AbstractPipeline.copyIntoWithCancel(AbstractPipeline.java:502)\n\tat java.base/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:488)\n\tat java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:474)\n\tat java.base/java.util.stream.FindOps$FindOp.evaluateSequential(FindOps.java:150)\n\tat java.base/java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234)\n\tat java.base/java.util.stream.ReferencePipeline.findFirst(ReferencePipeline.java:543)\n\tat org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:128)\n\t... 103 more\n",
+              "duration": 6900537000,
+              "status": "failed"
+            },
+            "match": {
+              "location": "com.automation.steps.HookService.before(io.cucumber.java.Scenario)"
+            }
+          }
+        ],
+        "line": 4,
+        "name": "add an item and check cart item increased",
+        "description": "",
+        "id": "swaglabs-home-feature;add-an-item-and-check-cart-item-increased",
+        "after": [
+          {
+            "result": {
+              "error_message": "java.lang.NullPointerException\n\tat com.automation.mobile.util.CommonUtil.captureScreenshot(CommonUtil.java:34)\n\tat com.automation.steps.HookService.afterStep(HookService.java:117)\n",
+              "duration": 4434000,
+              "status": "failed"
+            },
+            "match": {
+              "location": "com.automation.steps.HookService.afterStep(io.cucumber.java.Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 5089000,
+              "status": "skipped"
+            },
+            "line": 5,
+            "name": "sign in to the application with valid username and password",
+            "match": {
+              "location": "com.automation.steps.LoginPageSwagLabsStep.signInToTheApp()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 588000,
+              "status": "skipped"
+            },
+            "line": 6,
+            "name": "verify home page displayed",
+            "match": {
+              "location": "com.automation.steps.LoginPageSwagLabsStep.isHomePageDisplayed()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 291000,
+              "status": "skipped"
+            },
+            "line": 7,
+            "name": "tap on a product to add to a cart",
+            "match": {
+              "location": "com.automation.steps.swagLabHomeStepPage.clickOnItem()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 629000,
+              "status": "skipped"
+            },
+            "line": 8,
+            "name": "click on add to item button",
+            "match": {
+              "location": "com.automation.steps.swagLabHomeStepPage.clickOnAddToItemButton()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 160000,
+              "status": "skipped"
+            },
+            "line": 9,
+            "name": "get cart count",
+            "match": {
+              "location": "com.automation.steps.swagLabHomeStepPage.getCartCount()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 147000,
+              "status": "skipped"
+            },
+            "line": 10,
+            "name": "click on continue shopping",
+            "match": {
+              "location": "com.automation.steps.swagLabHomeStepPage.clickOnContinueShopping()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 134000,
+              "status": "skipped"
+            },
+            "line": 11,
+            "name": "click on add to cart button on home page",
+            "match": {
+              "location": "com.automation.steps.swagLabHomeStepPage.clickOnAddToCartAtHomePage()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 134000,
+              "status": "skipped"
+            },
+            "line": 12,
+            "name": "verify cart count increased",
+            "match": {
+              "location": "com.automation.steps.swagLabHomeStepPage.verifyCartCountIncreased()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@regression"
+          },
+          {
+            "name": "@functional"
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2025-09-16T14:34:55.732Z",
+        "before": [
+          {
+            "result": {
+              "error_message": "java.lang.NullPointerException\n\tat com.automation.mobile.listener.VideoManager.startRecording(VideoManager.java:24)\n\tat com.automation.steps.HookService.before(HookService.java:103)\n",
+              "duration": 2249000,
+              "status": "failed"
+            },
+            "match": {
+              "location": "com.automation.steps.HookService.before(io.cucumber.java.Scenario)"
+            }
+          }
+        ],
+        "line": 15,
+        "name": "remove an item and check cart item decreased",
+        "description": "",
+        "id": "swaglabs-home-feature;remove-an-item-and-check-cart-item-decreased",
+        "after": [
+          {
+            "result": {
+              "error_message": "java.lang.NullPointerException\n\tat com.automation.mobile.util.CommonUtil.captureScreenshot(CommonUtil.java:34)\n\tat com.automation.steps.HookService.afterStep(HookService.java:117)\n",
+              "duration": 876000,
+              "status": "failed"
+            },
+            "match": {
+              "location": "com.automation.steps.HookService.afterStep(io.cucumber.java.Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 161000,
+              "status": "skipped"
+            },
+            "line": 16,
+            "name": "sign in to the application with valid username and password",
+            "match": {
+              "location": "com.automation.steps.LoginPageSwagLabsStep.signInToTheApp()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 127000,
+              "status": "skipped"
+            },
+            "line": 17,
+            "name": "verify home page displayed",
+            "match": {
+              "location": "com.automation.steps.LoginPageSwagLabsStep.isHomePageDisplayed()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 158000,
+              "status": "skipped"
+            },
+            "line": 18,
+            "name": "tap on a product to add to a cart",
+            "match": {
+              "location": "com.automation.steps.swagLabHomeStepPage.clickOnItem()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 143000,
+              "status": "skipped"
+            },
+            "line": 19,
+            "name": "click on add to item button",
+            "match": {
+              "location": "com.automation.steps.swagLabHomeStepPage.clickOnAddToItemButton()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 130000,
+              "status": "skipped"
+            },
+            "line": 20,
+            "name": "click on continue shopping",
+            "match": {
+              "location": "com.automation.steps.swagLabHomeStepPage.clickOnContinueShopping()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 119000,
+              "status": "skipped"
+            },
+            "line": 21,
+            "name": "click on add to cart button on home page",
+            "match": {
+              "location": "com.automation.steps.swagLabHomeStepPage.clickOnAddToCartAtHomePage()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 124000,
+              "status": "skipped"
+            },
+            "line": 22,
+            "name": "get cart count",
+            "match": {
+              "location": "com.automation.steps.swagLabHomeStepPage.getCartCount()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 120000,
+              "status": "skipped"
+            },
+            "line": 23,
+            "name": "click on cart icon",
+            "match": {
+              "location": "com.automation.steps.swagLabHomeStepPage.clickOnCartIcon()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 132000,
+              "status": "skipped"
+            },
+            "line": 24,
+            "name": "click on remove button",
+            "match": {
+              "location": "com.automation.steps.swagLabHomeStepPage.clickRemoveButton()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 119000,
+              "status": "skipped"
+            },
+            "line": 25,
+            "name": "verify cart count decreased",
+            "match": {
+              "location": "com.automation.steps.swagLabHomeStepPage.verifyCartCountDecreased()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@regression"
+          },
+          {
+            "name": "@functional"
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2025-09-16T14:34:55.747Z",
+        "before": [
+          {
+            "result": {
+              "error_message": "java.lang.NullPointerException\n\tat com.automation.mobile.listener.VideoManager.startRecording(VideoManager.java:24)\n\tat com.automation.steps.HookService.before(HookService.java:103)\n",
+              "duration": 1624000,
+              "status": "failed"
+            },
+            "match": {
+              "location": "com.automation.steps.HookService.before(io.cucumber.java.Scenario)"
+            }
+          }
+        ],
+        "line": 28,
+        "name": "add filter to the item list",
+        "description": "",
+        "id": "swaglabs-home-feature;add-filter-to-the-item-list",
+        "after": [
+          {
+            "result": {
+              "error_message": "java.lang.NullPointerException\n\tat com.automation.mobile.util.CommonUtil.captureScreenshot(CommonUtil.java:34)\n\tat com.automation.steps.HookService.afterStep(HookService.java:117)\n",
+              "duration": 828000,
+              "status": "failed"
+            },
+            "match": {
+              "location": "com.automation.steps.HookService.afterStep(io.cucumber.java.Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 173000,
+              "status": "skipped"
+            },
+            "line": 29,
+            "name": "sign in to the application with valid username and password",
+            "match": {
+              "location": "com.automation.steps.LoginPageSwagLabsStep.signInToTheApp()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 144000,
+              "status": "skipped"
+            },
+            "line": 30,
+            "name": "verify home page displayed",
+            "match": {
+              "location": "com.automation.steps.LoginPageSwagLabsStep.isHomePageDisplayed()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 122000,
+              "status": "skipped"
+            },
+            "line": 31,
+            "name": "click on filter option",
+            "match": {
+              "location": "com.automation.steps.swagLabHomeStepPage.clickOnFilterOption()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 183000,
+              "status": "skipped"
+            },
+            "line": 32,
+            "name": "select low to high price option",
+            "match": {
+              "location": "com.automation.steps.swagLabHomeStepPage.selectLowToHighPriceOption()"
+            },
+            "keyword": "And "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@regression"
+          },
+          {
+            "name": "@functional"
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2025-09-16T14:34:55.757Z",
+        "before": [
+          {
+            "result": {
+              "error_message": "java.lang.NullPointerException\n\tat com.automation.mobile.listener.VideoManager.startRecording(VideoManager.java:24)\n\tat com.automation.steps.HookService.before(HookService.java:103)\n",
+              "duration": 1471000,
+              "status": "failed"
+            },
+            "match": {
+              "location": "com.automation.steps.HookService.before(io.cucumber.java.Scenario)"
+            }
+          }
+        ],
+        "line": 35,
+        "name": "toggle item list view",
+        "description": "",
+        "id": "swaglabs-home-feature;toggle-item-list-view",
+        "after": [
+          {
+            "result": {
+              "error_message": "java.lang.NullPointerException\n\tat com.automation.mobile.util.CommonUtil.captureScreenshot(CommonUtil.java:34)\n\tat com.automation.steps.HookService.afterStep(HookService.java:117)\n",
+              "duration": 798000,
+              "status": "failed"
+            },
+            "match": {
+              "location": "com.automation.steps.HookService.afterStep(io.cucumber.java.Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 128000,
+              "status": "skipped"
+            },
+            "line": 36,
+            "name": "sign in to the application with valid username and password",
+            "match": {
+              "location": "com.automation.steps.LoginPageSwagLabsStep.signInToTheApp()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 110000,
+              "status": "skipped"
+            },
+            "line": 37,
+            "name": "verify home page displayed",
+            "match": {
+              "location": "com.automation.steps.LoginPageSwagLabsStep.isHomePageDisplayed()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 108000,
+              "status": "skipped"
+            },
+            "line": 38,
+            "name": "toggle the items view",
+            "match": {
+              "location": "com.automation.steps.swagLabHomeStepPage.ToggleTheItemView()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@regression"
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2025-09-16T14:34:55.765Z",
+        "before": [
+          {
+            "result": {
+              "error_message": "java.lang.NullPointerException\n\tat com.automation.mobile.listener.VideoManager.startRecording(VideoManager.java:24)\n\tat com.automation.steps.HookService.before(HookService.java:103)\n",
+              "duration": 1188000,
+              "status": "failed"
+            },
+            "match": {
+              "location": "com.automation.steps.HookService.before(io.cucumber.java.Scenario)"
+            }
+          }
+        ],
+        "line": 41,
+        "name": "verify menu options are displayed",
+        "description": "",
+        "id": "swaglabs-home-feature;verify-menu-options-are-displayed",
+        "after": [
+          {
+            "result": {
+              "error_message": "java.lang.NullPointerException\n\tat com.automation.mobile.util.CommonUtil.captureScreenshot(CommonUtil.java:34)\n\tat com.automation.steps.HookService.afterStep(HookService.java:117)\n",
+              "duration": 601000,
+              "status": "failed"
+            },
+            "match": {
+              "location": "com.automation.steps.HookService.afterStep(io.cucumber.java.Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 100000,
+              "status": "skipped"
+            },
+            "line": 42,
+            "name": "sign in to the application with valid username and password",
+            "match": {
+              "location": "com.automation.steps.LoginPageSwagLabsStep.signInToTheApp()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 90000,
+              "status": "skipped"
+            },
+            "line": 43,
+            "name": "verify home page displayed",
+            "match": {
+              "location": "com.automation.steps.LoginPageSwagLabsStep.isHomePageDisplayed()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 88000,
+              "status": "skipped"
+            },
+            "line": 44,
+            "name": "verify menu tab is displayed",
+            "match": {
+              "location": "com.automation.steps.swagLabHomeStepPage.verifyMenuTabDisplayed()"
+            },
+            "keyword": "And "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@regression"
+          }
+        ]
+      }
+    ],
+    "name": "swaglabs home Feature",
+    "description": "",
+    "id": "swaglabs-home-feature",
+    "keyword": "Feature",
+    "uri": "file:src/test/resources/Mobile/test_features/swaglab_homepage.feature",
+    "tags": []
+  }
+]

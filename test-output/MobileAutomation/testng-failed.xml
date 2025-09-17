@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite thread-count="1" parallel="tests" name="Failed suite [MobileAutomation]">
+  <listeners>
+    <listener class-name="com.automation.mobile.listener.TestNGListener"/>
+  </listeners>
+  <test thread-count="1" name="Device 1(failed)">
+    <classes>
+      <class name="com.automation.mobile.TestRunner">
+        <methods>
+          <include name="runScenario" invocation-numbers="0 1 2 3 4"/>
+          <include name="tearDownClass"/>
+          <include name="setUpClass"/>
+        </methods>
+      </class> <!-- com.automation.mobile.TestRunner -->
+    </classes>
+  </test> <!-- Device 1(failed) -->
+</suite> <!-- Failed suite [MobileAutomation] -->
